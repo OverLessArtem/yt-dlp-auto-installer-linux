@@ -7,7 +7,7 @@ if command -v sudo &> /dev/null; then
 elif command -v doas &> /dev/null; then
     SU="doas"
 else
-    echo "Error: neither sudo nor doas is installed. Cannot continue" >&2
+    echo "Error: neither sudo or doas is installed. Cannot continue" >&2
     exit 1
 fi
 

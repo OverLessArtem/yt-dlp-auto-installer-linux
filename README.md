@@ -4,7 +4,7 @@ A dumb simple Bash script that auto-installs the latest `yt-dlp` to `/usr/local/
 
 
 ## Requirements
-Just one dumb requirement:
+Just two dumb requirement:
 
     python (for yt-dlp to work)
     curl   (for the script to work)

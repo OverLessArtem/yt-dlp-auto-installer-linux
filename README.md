@@ -1,18 +1,21 @@
 # yt-dlp-auto-installer-linux
 
-A dumb simple Bash script that auto-installs the latest `yt-dlp` to `/usr/local/bin`.
+A dumb simple Bash script to auto-install the latest `yt-dlp` to `/usr/local/bin`.  
+Downloads the latest version, sets it up with proper permissions, and works on most Linux distros.
 
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/)
+
+## Why Use This?
+- One-command setup for the latest `yt-dlp`.
+- Checks for `sudo` or `doas` automatically.
+- Safe and clean: uses temp files, checks permissions, and verifies installation.
 
 ## Requirements
-Just two dumb requirement:
+- `python3` (required for `yt-dlp`)
+- `curl` (to download the binary)
+- `sudo` or `doas` (for installing to `/usr/local/bin`)
 
-    python (for yt-dlp to work)
-    curl   (for the script to work)
-
-That's it.
-
-## How to install:
-
+## How to Install
 ```bash
 git clone https://github.com/OverLessArtem/yt-dlp-auto-installer-linux.git
 cd yt-dlp-auto-installer-linux
